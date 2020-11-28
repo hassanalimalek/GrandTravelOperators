@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grand Travels </title>
+    <!-- Css Style Sheet -->
+    <link rel="stylesheet" href="./styles.css">
+    <!-- FontAweome Icon Pack -->
+    <script src="https://kit.fontawesome.com/585bb59231.js" 
+    crossorigin="anonymous"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <!-- TopBar -->
+        <div class="topBar">
+            <div class="nav ">
+                <div class="navImg flexItem hidden">
+                    <a href="./index.html"><img src="./assets/icons/mountains.png" alt=""></a>
+                </div>
+                <div class="navTitle flexItem">
+                    <h3><a href="./index.html">Grand Travels</a> </h3>
+                </div>
+                <div class="navOptions flexItem">
+                  <ul>
+                      <li><a href="#destinations">Destinations</a></li>
+                      <li><a href="#contact">Contacts</a></li>
+                  </ul>
+                </div>           
+            </div>
+        </div> 
+        <!-- Main Header -->
+        <div class="mainHeader">
+            <h2>Experience the Wild</h2>
+            <button class="headerBtn"><a href="#destinations"> Explore&nbsp;<i class="fas fa-long-arrow-alt-right"></i></a></button>
+        </div>
+    </div>
+    <!-- End of Header -->
+    <!-- Destinations -->
+    <div id="destinations" class="destinationsWrapper">
+        <div class="destinationTitle">
+            <h1>Destinations </h1>
+        </div>
+         <!-- Destination cards -->
+         <div class="destinationCards">
+            <!-- Single Destination Card -->
+            <div class="destinationCard">
+                <div class="destinationImgWrapper">
+                    <img src="./assets/images/london.jpg" alt="">
+                </div>
+                <div class="destinationInfo">
+                  <h4 class="destinationCity">London</h4>
+                  <div class="destinationDetails">
+                    <span i class="fas fa-map">&nbsp;UK</span>
+                    <a  href="./Options/options.html" class="primaryBtn exploreBtn">Explore</a>
+                  </div>
+                </div>
+              </div>
+            <!-- Single Destination Card -->
+            <div class="destinationCard">
+                <div class="destinationImgWrapper">
+                    <img src="./assets/images/paris.jpg" alt="">
+                </div>
+                <div class="destinationInfo">
+                  <h4 class="destinationCity">Paris</h4>
+                  <div class="destinationDetails">
+                    <span i class="fas fa-map">&nbsp;France</span>
+                    <a  href="./Options/options.html" class="primaryBtn exploreBtn">Explore</a>
+                  </div>
+                </div>
+              </div>
+            <!-- Single Destination Card -->
+            <div class="destinationCard">
+                <div class="destinationImgWrapper">
+                    <img src="./assets/images/madrid.jpg" alt="">
+                </div>
+                <div class="destinationInfo">
+                  <h4 class="destinationCity">Madrid</h4>
+                  <div class="destinationDetails">
+                    <span i class="fas fa-map">&nbsp;Spain</span>
+                    <a  href="./Options/options.html" class="primaryBtn exploreBtn">Explore</a>
+                  </div>
+                </div>
+              </div>
+            <!-- Single Destination Card -->
+            <div class="destinationCard hidden special">
+                <div class="destinationImgWrapper">
+                    <img src="./assets/images/genva.jpg" alt="">
+                </div>
+                <div class="destinationInfo">
+                  <h4 class="destinationCity">Geneva</h4>
+                  <div class="destinationDetails">
+                    <span i class="fas fa-map">&nbsp;Switzerland</span>
+                    <a  href="./Options/options.html" class="primaryBtn exploreBtn">Explore</a>
+                  </div>
+                </div>
+              </div>
+            <!-- Single Destination Card -->
+            <div class="destinationCard hidden special">
+                <div class="destinationImgWrapper">
+                    <img src="./assets/images/rome.jpg" alt="">
+                </div>
+                <div class="destinationInfo">
+                  <h4 class="destinationCity">Rome</h4>
+                  <div class="destinationDetails">
+                    <span i class="fas fa-map">&nbsp;Italy</span>
+                    <a  href="./Options/options.html" class="primaryBtn exploreBtn">Explore</a>
+                  </div>
+                </div>
+              </div>
+            <!-- Single Destination Card -->
+            <div class="destinationCard hidden special">
+                <div class="destinationImgWrapper">
+                    <img src="./assets/images/sydney.jpg" alt="">
+                </div>
+                <div class="destinationInfo">
+                  <h4 class="destinationCity">Sydney</h4>
+                  <div class="destinationDetails">
+                    <span i class="fas fa-map">&nbsp;Australia</span>
+                    <a  href="./Options/options.html" class="primaryBtn exploreBtn">Explore</a>
+                  </div>
+                </div>
+              </div>
+            <!-- Single Destination Card -->
+            <div class="destinationCard hidden special">
+                <div class="destinationImgWrapper">
+                    <img src="./assets/images/amsterdam.jpg" alt="">
+                </div>
+                <div class="destinationInfo">
+                <h4 class="destinationCity">Amsterdam</h4>
+                <div class="destinationDetails">
+                    <span i class="fas fa-map">&nbsp;Netherland</span>
+                    <a  href="./Options/options.html" class="primaryBtn exploreBtn">Explore</a>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="destinationTitle">
+            <button class="viewBtn primaryBtn">View More</button>
+        </div>
+    </div>
+    <!-- End of Destinations -->
+    <!-- Contact -->
+    <div id="contact">
+        <div class="map"></div>
+        <div class="contact-form bg-primary p2">
+            <h2 class="m-heading"><span class="text-dark">Contact</span> Us</h2>
+            <p>Please use the form below to contact us</p>
+            <form action="https://formspree.io/f/meqplzkq" method="POST">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" placeholder="John Wick">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="bornkiller@gmail.com">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="text" name="phone" id="phone" placeholder="+1-1234-5678">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea type="text" name="message" id="message"></textarea>
+                </div>
+                <button class="primaryBtn" type="submit" class="btn bg-dark">Submit</button>
+            </form>
+        </div>
+    
+    </div>
+    <!-- End of Contact -->
+    <!-- Footer -->
+    <footer class="main-footer bg-dark py-1 text-center">
+        <div class="container">
+            <p>Copyright &copy; 2020 Grand Travel Operator All rights reserved</p>
+        </div>
+    </footer>
+
+
+    <!-- Google Maps -->
+    <script defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAlo6sTfOBqvxvTKm5B8TH94hoBO8HZOcs&callback=initMap"  async defer></script>
+
+
+    <!-- Js Script -->
+    <script src="./app.js"></script>
+    
+   
+
+    
+</body>
+</html>

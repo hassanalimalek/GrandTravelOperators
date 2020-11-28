@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+      <!-- Google Fonts -->
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;400&display=swap" rel="stylesheet">    
+      <link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
+       <!-- FontAweome Icon Pack -->
+       <script src="https://kit.fontawesome.com/585bb59231.js" crossorigin="anonymous"></script>
+    <!-- CSS StyleSheet -->
+    <link rel="stylesheet" href="./options.css">
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <!--form OverLay -->
+    <div class="overlay hidden" id="formOverlay" >
+            <i class="crossBtn fas fa-times"></i>
+        <div class="overlayWrapper">
+            <div class="overlayInfo">
+                <h2 >Camp</h2>
+                <p>The Camping experience you require.</p>
+            </div>
+          <div class="formWrapper">
+            <form id= "form">
+                <div class="elem-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="visitor_name" placeholder="John Doe" pattern=[A-Z\sa-z]{3,20} required>
+                </div>
+                <div class="elem-group">
+                <label for="email">Your E-mail</label>
+                <input type="email" id="email" name="visitor_email" placeholder="john.doe@email.com" required>
+                </div>
+                <div class="elem-group">
+                <label for="phone">Your Phone</label>
+                <input type="tel" id="phone" name="visitor_phone" placeholder="498-348-3872" pattern=(\d{3})-?\s?(\d{3})-?\s?(\d{4}) required>
+                </div>
+                <div class="elem-group " style="width: 40%;">
+                <label for="guests">Guests</label>
+                <input type="number" id="guests" name="total_guests" placeholder="1" min="1" required>
+                </div>  
+                <div class="elem-group inlined">
+                <label for="checkin-date">Check-in Date</label>
+                <input type="date" id="checkinDate" name="checkin" required>
+                </div>
+                <div class="elem-group inlined">
+                <label for="checkout-date">Check-out Date</label>
+                <input type="date" id="checkoutDate" name="checkout" required>
+                </div>
+                <button class="formBtn" type="submit">Book</button>
+             </form>
+            </div>
+        </div>
+        
+
+    </div>
+    <!-- Bill Overlay -->
+    <div class="overlay hidden" id="billOverlay">
+       
+        <div class="overlayWrapper">
+            <div class="billHeader overlayInfo">
+                <div class="back">
+                    <button class="backBtn"><i class="fas fa-arrow-left"></i></button> 
+                </div>
+                <h2>Invoice</h2>
+            </div>
+           
+            <div class="billDetails">
+                <div class="billInfo">
+
+                </div>
+                <br>
+                <div class="dpButtons ">
+                    <button class="downloadInvoice">Download as PDF</button>`
+                    <button class="printInvoice">Print as PDF</button>`
+                </div>
+                     
+            </div>
+           
+
+        </div>
+    </div>
+    <!-- Confirm Bill Overlay -->
+    <div class="overlay hidden " id="confirmBillOverlay" >
+        <div class="overlayWrapper">
+            <div class="overlayInfo">
+                <div class="checkBox">
+                    <svg class="checkmark" viewBox="0 0 52 52">
+                        <circle class="checkmark-circle" fill="none" cx="26" cy="26" r="25" />
+                        <path class="checkmark-check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
+                    </svg>
+                    <p style="text-align: center;">Booking Confirmed</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Navigation Bar -->
+    <div class="navigation">
+        <div class="topBar">
+            <div class="nav1 ">
+                <div class="navImg1 flexItem ">
+                    <a href="../index.html"><img src="../assets/icons/mountains.png" alt=""></a>
+                </div>
+                <div class="navTitle1 flexItem">
+                    <h3><a href="../index.html">Grand Travels</a></h3>
+                </div>         
+            </div>
+        </div> 
+    </div>
+    <!-- City Wrapper -->
+    <div class="cityWrapper">
+        <div class="cityTitle">
+            
+        </div>
+        <div class="cityOptions">
+            <!-- Single Option -->
+            <div id="camp" class="cityOption">
+                <div class="destinationImgWrapper">
+                    <img src="../assets/images/camp.jpg" alt="">
+                </div>
+                <div class="optionInfo">
+                    <div class="optionText">
+                        <h3>CampSite</h3>
+                        <h4 class="campPrice">Starting from <span class="euroSign">$</span>70</h4>
+                    </div>
+                    <div class="optionBtn">
+                        <button class="bookBtn">Book Now</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Single Option -->
+            <div id="hostel" class="cityOption">
+                <div class="destinationImgWrapper">
+                    <img src="../assets/images/hostel.jpg" alt="">
+                </div>
+                <div class="optionInfo">
+                    <div class="optionText">
+                        <h3>Hostel</h3>
+                        <h4 class="hostelPrice">Starting from <span class="euroSign">$</span>70</h4>
+                    </div>
+                    <div class="optionBtn">
+                        <button class="bookBtn">Book Now</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Single Option -->
+            <div id="bnb" class="cityOption">
+                <div class="destinationImgWrapper">
+                    <img src="../assets/images/bnb.jpg" alt="">
+                </div>
+                <div class="optionInfo">
+                    <div class="optionText">
+                        <h3>B&B</h3>
+                        <h4 class="bnbPrice">Starting from <span class="euroSign">$</span>70</h4>
+                    </div>
+                    <div class="optionBtn">
+                        <button class="bookBtn">Book Now</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Single Option -->
+            <div id="hotel" class="cityOption">
+                <div class="destinationImgWrapper">
+                    <img src="../assets/images/hotel.jpg" alt="">
+                </div>
+                <div class="optionInfo">
+                    <div class="optionText">
+                        <h3>Hotel</h3>
+                        <h4 class="hotelPrice">Starting from <span class="euroSign">$</span>70</h4>
+                    </div>
+                    <div class="optionBtn">
+                        <button class="bookBtn">Book Now</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Single Option -->
+            <div id="resort" class="cityOption">
+                <div class="destinationImgWrapper">
+                    <img src="../assets/images/resort.jpg" alt="">
+                </div>
+                <div class="optionInfo">
+                    <div class="optionText">
+                        <h3>Resort</h3>
+                        <h4 class="resortPrice">Starting from <span class="euroSign">$</span>70</h4>
+                    </div>
+                    <div class="optionBtn">
+                        <button class="bookBtn">Book Now</button>
+                    </div>
+                </div>
+            </div>
+       
+        </div>
+    </div>
+    <!-- Footer -->
+     <footer class="main-footer bg-dark py-1 text-center">
+        <div class="container">
+            <p>Copyright &copy; 2020 Grand Travel Operator All rights reserved</p>
+        </div>
+    </footer>
+    
+    <!-- JSpdf -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.min.js"></script>
+
+    <!-- Js Script -->
+    <script src="./options.js"></script>
+</body>
+</html>
